@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  # uncomment before for production
+  # auth:
+  #   build: ./modules/auth
+  #   ports:
+  #     - "3200:3200"
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
